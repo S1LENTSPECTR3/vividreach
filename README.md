@@ -1,7 +1,15 @@
-# VividReach Site
+# VividReach – Next.js 14
 
-Next.js 14 + Tailwind 3. CRO landing. Logos wired. Contact API.
+- Tailwind wired
+- Dark SVG logo everywhere
+- Calendly: https://calendly.com/vividreachdigitalmarketing/30min
+- Contact API at `/api/contact`
 
-## Quick start
+## Dev
+```
 npm i
 npm run dev
+```
+
+## Deploy
+Push to GitHub → Import on Vercel → add envs (already in `.env.local`).
