@@ -2,4 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body { height: 100%; }
+/* Global styles */
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  background-color: #0d1321;
+  color: #f8f8f8;
+}
+
+/* Reusable utility classes */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium text-white shadow-md transition-colors duration-200;
+  background-image: linear-gradient(to right, theme('colors.primary.DEFAULT'), theme('colors.secondary.DEFAULT'));
+}
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium text-white bg-gray-700/40 backdrop-blur-sm shadow-md transition-colors duration-200;
+}
+.btn-secondary:hover {
+  @apply bg-gray-700/60;
+}
